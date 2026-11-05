@@ -1,0 +1,4 @@
+/bin/
+/evidence-desk
+*.test
+*.out
