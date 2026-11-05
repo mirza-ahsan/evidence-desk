@@ -17,3 +17,5 @@ vet:
 
 fmt:
 	gofmt -w .
+
+check: fmt vet test
