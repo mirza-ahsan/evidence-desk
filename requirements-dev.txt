@@ -1,0 +1,95 @@
+annotated-doc==0.0.6
+    # via fastapi
+annotated-types==0.8.0
+    # via pydantic
+anyio==4.16.0
+    # via
+    #   fastapi
+    #   httpx
+    #   starlette
+ast-serialize==0.13.1
+    # via mypy
+certifi==2026.10.23
+    # via
+    #   httpcore
+    #   httpx
+click==8.5.1
+    # via uvicorn
+colorama==0.4.6 ; sys_platform == 'win32'
+    # via pytest
+coverage==7.17.2
+    # via pytest-cov
+fastapi==0.162.4
+    # via evidence-desk
+h11==0.16.0
+    # via
+    #   httpcore
+    #   uvicorn
+httpcore==1.0.9
+    # via httpx
+httpx==0.28.1
+idna==3.20
+    # via
+    #   anyio
+    #   httpx
+iniconfig==2.3.1
+    # via pytest
+jinja2==3.1.6
+    # via evidence-desk
+librt==0.16.0 ; platform_python_implementation != 'PyPy'
+    # via mypy
+markupsafe==3.0.4
+    # via jinja2
+mypy==2.4.1
+mypy-extensions==1.2.0
+    # via mypy
+numpy==2.5.4
+    # via pandas
+opentelemetry-api==1.45.2
+    # via fastapi
+packaging==26.3
+    # via pytest
+pandas==3.1.1
+    # via evidence-desk
+pathspec==1.1.1
+    # via mypy
+pluggy==1.7.0
+    # via
+    #   pytest
+    #   pytest-cov
+pydantic==2.14.3
+    # via
+    #   evidence-desk
+    #   fastapi
+pydantic-core==2.50.4
+    # via pydantic
+pygments==2.21.0
+    # via pytest
+pytest==9.2.0
+    # via pytest-cov
+pytest-cov==7.1.0
+python-dateutil==4.0.0
+    # via pandas
+ruff==0.17.4
+starlette==1.10.0
+    # via fastapi
+typing-extensions==4.16.0
+    # via
+    #   anyio
+    #   fastapi
+    #   mypy
+    #   opentelemetry-api
+    #   pydantic
+    #   pydantic-core
+    #   starlette
+    #   typing-inspection
+typing-inspection==0.4.5
+    # via
+    #   fastapi
+    #   pydantic
+tzdata==2026.6
+    # via
+    #   pandas
+    #   python-dateutil
+uvicorn==0.54.0
+    # via evidence-desk
