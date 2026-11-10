@@ -1,21 +1,15 @@
-BINARY := evidence-desk
-CMD    := ./cmd/evidence-desk
-
-.PHONY: run build test vet fmt
+.PHONY: run test lint fmt
 
 run:
-	go run $(CMD)
-
-build:
-	go build -o bin/$(BINARY) $(CMD)
+	uv run uvicorn evidence_desk.app:app --reload
 
 test:
-	go test ./...
+	uv run pytest
 
-vet:
-	go vet ./...
+lint:
+	uv run ruff check .
+	uv run ruff format --check .
+	uv run mypy
 
 fmt:
-	gofmt -w .
-
-check: fmt vet test
+	uv run ruff format .
